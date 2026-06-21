@@ -4,10 +4,10 @@ import { resolve } from 'path';
 export default defineConfig({
   root: 'src/client',
   server: {
-    port: 5173,
+    port: 4400,
     proxy: {
       '/api/': {
-        target: 'http://localhost:3000',
+        target: 'http://localhost:4500',
         changeOrigin: true
       }
     },
